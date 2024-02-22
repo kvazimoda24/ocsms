@@ -13,13 +13,13 @@ namespace OCA\OcSms\Db;
 
 use \OCP\IDBConnection;
 
-use \OCP\AppFramework\Db\Mapper;
+use \OCP\AppFramework\Db\QBMapper;
 
 use \OCA\OcSms\AppInfo\OcSmsApp;
 use \OCA\OcSms\Lib\PhoneNumberFormatter;
 use \OCA\OcSms\Db\ConversationStateMapper;
 
-class SmsMapper extends Mapper {
+class SmsMapper extends QBMapper {
 	/*
 	* Useful to use a tag for getAllIds, else mobile can have problem to know
 	* on which mailbox it works

@@ -14,10 +14,10 @@ namespace OCA\OcSms\Db;
 use OCP\AppFramework\Db\MultipleObjectsReturnedException;
 use \OCP\IDBConnection;
 
-use \OCP\AppFramework\Db\Mapper;
+use \OCP\AppFramework\Db\QBMapper;
 use \OCP\AppFramework\Db\DoesNotExistException;
 
-class ConfigMapper extends Mapper {
+class ConfigMapper extends QBMapper {
 
 	/**
 	 * @var string ownCloud user id
